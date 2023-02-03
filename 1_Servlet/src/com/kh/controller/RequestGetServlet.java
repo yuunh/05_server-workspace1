@@ -53,6 +53,7 @@ public class RequestGetServlet extends HttpServlet {
 		// 체크박스와 같이 복수개의 벨류 값들을 뽑고자 할 때
 		String[] foods = request.getParameterValues("food");
 		
+		System.out.println("이윤화");
 		System.out.println("name : " + name);
 		System.out.println("gender : " + gender);
 		System.out.println("age : " + age);
