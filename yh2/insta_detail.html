@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <style>
-      div{box-sizing: border-box; border:1px solid rgb(168, 168, 168);}
+    <script src="https://kit.fontawesome.com/65b9d5555c.js" crossorigin="anonymous"></script>   
+    <style>
+      div{box-sizing: border-box; 
+        border:1px sol/id rgb(168, 168, 168);
+    }
       .wrap{
         width: 1500px;
         height: 1500px;
@@ -77,7 +80,6 @@
     }
 
     <!--메뉴바-->
-    
     {padding:0;margin:0}
     li{list-style:none}
 a{text-decoration:none;font-size:14px}
@@ -162,6 +164,76 @@ a{text-decoration:none;font-size:14px}
             padding-bottom: 10px;
         }
 
+        #content>div {width: 100%;}
+        #c1 {
+            height: 50%;
+            padding: 50px;
+            margin-left: 150px;
+        }
+        #c2, #c3 {height: 10%;}
+        #c4 {
+            height: 30%;
+            float: left;
+            padding-top: 130px;
+            padding-left: 190px;
+        }
+
+        #c2>div, #c3>div {
+            height: 100%;
+            float: left;
+        }
+        #instaId {width: 20%;}
+        #share {
+            width: 80%;
+            padding-top: 100px;
+            padding-left: 200px;
+        }
+        i {
+            font-size: 25px;
+            float: left;
+            padding: 5px;
+        }
+        
+        #c3>div {
+            width: 50%;
+        }
+
+        #instaId {
+            font-size: 30px;
+            padding-left: 200px;
+            padding-top: 110px;
+        }
+
+        #instaCon {
+            padding-left: 200px;
+            padding-top: 60px;
+        }
+        
+        #instaTag {
+            padding-top: 80px;
+            padding-left: 40px;
+            font-size: 20px;
+        }
+
+        .btn {
+            margin-right: 5px;
+            height: 30px;
+            width: 70px;
+        }
+
+        #c4 * {margin: 5px;}
+        input {
+            height: 30px;
+            width: 450px;
+        }
+
+        #ansBtn {
+            height: 35px;
+            width: 75px;
+            font-size: 15px;
+        }
+
+
     </style>
 
      </head>
@@ -209,12 +281,52 @@ a{text-decoration:none;font-size:14px}
                 </div>
             </div>
             <!--navigator-->
-            <div id="navigator">
+            <!-- <div id="navigator">
                 <div id="navi1">네비1</div>
                 <div id="navi2">네비2</div>
-            </div>
+            </div> -->
             <!--content-->
-            <div id="content"></div>
+            <div id="content">
+                <div id="c1">
+                    <img src="resources/4.jpg" alt="">
+                </div>
+                <div id="c2">
+                    <div id="instaId"><b>yuuuunh</b></div>
+                    <div id="share">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-user-plus"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-instagram"></i>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-heart"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="c3">
+                    <div id="instaCon">
+                        <h3>가을 언제 오냐고~ 나도 까죽자켓 입구 싶다고? 그나저나 슈펜에서 보라끌레르 제품제공 해줬는데 부츠가 매~끈 하게 잘빠지고 스판이 쫀쫀해서 착용감도 편하고 날씬해 보이기까지(?) 하루 종일 신어도 완준 편해? -</h3>
+                    </div>
+                    <div id="instaTag">
+                        <button class="btn">스트리트</button>
+                        <button class="btn">힙합</button>
+                        <button class="btn">유니크</button>
+                        <button class="btn">겨울</button>
+                        <button class="btn">따뜻한</button>
+                    </div>
+                </div>
+                <div id="c4">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <input type="text" placeholder="로그인 후 댓글을 작성해주세요.">
+                    <button id="ansBtn">작성</button>
+                </div>
+            </div>
             <!--footer-->
             <div id="f1"></div>
             <div id="footer">
