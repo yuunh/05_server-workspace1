@@ -12,13 +12,13 @@
   
   <!-- 서블릿 등록 -->
   <servlet>
-  <servlet-name>Test</servlet-name>
+  <servlet-name>TestServlet</servlet-name>
   <!-- <servlet-class>패키지.클래스이름</servlet-class> -->
-  <servlet-class>com.kh.test.Test</servlet-class>
+  <servlet-class>com.kh.test.controller.TestController</servlet-class>
   </servlet>
   
   <servlet-mapping>
-  <servlet-name>Test</servlet-name>
+  <servlet-name>TestController</servlet-name>
   <!-- <url-pattern>/test</url-pattern> => url(Test) -->
   <url-pattern>*.do</url-pattern> <!-- url(Test.do) -->
   </servlet-mapping>
